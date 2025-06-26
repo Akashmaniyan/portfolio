@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Akash Subramaniyan</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+   <div class="nav-toggle">
+    <img src="assets/images/moon.jpg" id="toggle-icon" onclick="toggleMode()" class="icon-toggle" alt="Toggle" title="Toggle Theme"/>
+  </div>
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/images/alien.png" alt="Alien Invasion Game"/>
+        <h3>Alien Invasion Game</h3>
+        <p>2D shooter using Python and Pygame.</p>
+        <a href="https://github.com/akashsubramaniyan/Alien_invasion">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/Screenshot (3).png" alt="Mobile Store Web App"/>
+        <h3>Mobile Store Web App</h3>
+        <p>React app with GSAP animations and responsive layout.</p>
+        <a href="https://github.com/akashsubramaniyan/webpage">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/Screenshot (1).png" alt="ToDo Notepad"/>
+        <h3>ToDo Notepad</h3>
+        <p>React.js task manager with CRUD and hooks.</p>
+        <a href="https://github.com/akashsubramaniyan/ToDo">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/Screenshot (3).png" alt="Drag & Drop Tool"/>
+        <h3>Drag & Drop Tool</h3>
+        <p>Async image drag-and-drop using JavaScript.</p>
+        <a href="https://github.com/akashsubramaniyan/Drag">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/data.jpg" alt="Analytics Dashboard"/>
+        <h3>Analytics Dashboard</h3>
+        <p>SQL and Power BI dashboard for real-world data.</p>
+      </div>
+    </div>
+    <p><a href="contact.html">Contact Me →</a></p>
+  </div>
+
+
+  <script>
+function toggleMode() {
+  document.body.classList.toggle("dark-mode");
+  const icon = document.getElementById("toggle-icon");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.src = "assets/images/sun.png";
+    icon.title = "Switch to Light Mode";
+  } else {
+    icon.src = "assets/images/moon.jpg";
+    icon.title = "Switch to Dark Mode";
+  }
+}
+</script>
+</body>
+</html>

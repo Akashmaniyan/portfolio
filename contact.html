@@ -1,0 +1,54 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Contact | Akash Subramaniyan</title>
+      <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+      
+<nav class="navbar">
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-toggle">
+    <img src="assets/images/moon.jpg" id="toggle-icon" onclick="toggleMode()" class="icon-toggle" alt="Toggle Mode" title="Toggle Theme"/>
+  </div>
+</nav>
+
+      <div class="container">
+        
+    <h1>Contact</h1>
+    <p>Email: <a href="mailto:akashabisk@gmail.com">akashabisk@gmail.com</a></p>
+    <p>Phone: +44 7440 187479</p>
+    <p>
+      <a href="https://linkedin.com/in/akashs05">LinkedIn</a> |
+      <a href="https://github.com/akashsubramaniyan">GitHub</a> |
+      <a href="https://leetcode.com/u/akashabisk/">LeetCode</a>
+    </p>
+    <p><a href="index.html">← Back to Home</a></p>
+    
+      </div>
+      
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark-mode");
+  const icon = document.getElementById("toggle-icon");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.src = "assets/images/sun.png";
+    icon.title = "Switch to Light Mode";
+  } else {
+    icon.src = "assets/images/moon.png";
+    icon.title = "Switch to Dark Mode";
+  }
+}
+</script>
+
+    </body>
+    </html>
+    

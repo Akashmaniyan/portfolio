@@ -1,0 +1,48 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Index | Akash Subramaniyan</title>
+      <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+      
+<nav class="navbar">
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-toggle">
+    <img src="assets/images/moon.jpg" id="toggle-icon" onclick="toggleMode()" class="icon-toggle" alt="Toggle" title="Toggle Theme"/>
+  </div>
+</nav>
+
+      <div class="container">
+        
+    <h1>Hi, I'm Akash Subramaniyan</h1>
+    <p>I'm a Software Engineer and MSc Computer Science student at Coventry University. I specialize in full-stack web development, data analytics, and creative problem-solving.</p>
+    <p><a href="about.html">Learn more about me →</a></p>
+    
+      </div>
+      
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark-mode");
+  const icon = document.getElementById("toggle-icon");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.src = "assets/images/sun.png";
+    icon.title = "Switch to Light Mode";
+  } else {
+    icon.src = "assets/images/moon.jpg";
+    icon.title = "Switch to Dark Mode";
+  }
+}
+</script>
+
+    </body>
+    </html>
+    
